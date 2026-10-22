@@ -1,0 +1,57 @@
+# ============================================================
+# AI Sports Video Analyser - Requirements
+# Python 3.10+ required
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# ---- Core Framework ----
+streamlit>=1.32.0
+python-dotenv>=1.0.0
+
+# ---- Computer Vision ----
+opencv-python>=4.9.0.80
+Pillow>=10.2.0
+imageio>=2.34.0
+imageio-ffmpeg>=0.5.0
+
+# ---- AI / Object Detection / Pose ----
+ultralytics>=8.1.0          # YOLOv8 detection + tracking (includes ByteTrack)
+mediapipe>=0.10.9           # Pose estimation (33 landmarks)
+
+# ---- Deep Learning ----
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ---- Data Processing ----
+numpy>=1.24.0
+pandas>=2.1.0
+scipy>=1.11.0
+
+# ---- Visualization ----
+matplotlib>=3.8.0
+plotly>=5.18.0
+seaborn>=0.13.0
+
+# ---- PDF Report Generation ----
+fpdf2>=2.7.8
+
+# ---- AI Feedback (Gemini API) ----
+google-generativeai>=0.7.0
+
+# ---- Utilities ----
+tqdm>=4.66.0
+loguru>=0.7.2
+
+# ---- Database ----
+# sqlite3 is built-in to Python — no install needed
+
+# ---- Optional: Video encoding ----
+# ffmpeg-python>=0.2.0   # Uncomment if FFmpeg is installed on system
+
+# ============================================================
+# Installation Notes:
+# 1. For GPU (NVIDIA): Install PyTorch with CUDA from pytorch.org
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# 2. For CPU only (default above): runs without GPU
+# 3. YOLOv8 model weights auto-download on first run
+# ============================================================
