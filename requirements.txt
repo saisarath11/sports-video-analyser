@@ -16,6 +16,7 @@ imageio-ffmpeg>=0.5.0
 
 # ---- AI / Object Detection / Pose ----
 ultralytics>=8.1.0          # YOLOv8 detection + tracking (includes ByteTrack)
+lapx>=0.5.5                 # Linear Assignment Problem solver required by ByteTrack in Ultralytics
 mediapipe>=0.10.9           # Pose estimation (33 landmarks)
 
 # ---- Deep Learning ----
